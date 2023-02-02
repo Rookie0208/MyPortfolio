@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=andika">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="preloader.css"> -->
+    <link rel="stylesheet" href="./mobileNav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style>
+    .pop {
+        /* border: 2px solid black; */
+        /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4); */
+        border-radius: 15px;
+        filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.4));
+    }
+
+/* Add Zoom Animation */
+/* .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+} */
+
+
+/* .slideanim {visibility:hidden;} */
+/* .slide { */
+  /* The name of the animation */
+  /* animation-name: slide; */
+  /* -webkit-animation-name: slide; */
+  /* The duration of the animation */
+  /* animation-duration: 1s; */
+  /* -webkit-animation-duration: 1s; */
+  /* Make the element visible */
+  /* visibility: visible; */
+/* } */
+
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+/* @keyframes slide {
+  0% {
+    opacity: 0.5;
+    transform: translateY(90%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(90%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+} */
+</style>
+
+<body>
+    <div class="preloader">
+        <span class="ptext"></span>
+    </div>
+
+        <div class="big-nav">
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+    
+            <div class="mobile-nav">
+                <i class="fa fa-times" id="pop" onclick="hideMenu()"></i>
+                <ul>
+                    <li data-text="home"><a class="nav-links" href="#home">home</a></li>
+                    <li data-text="about-me"><a class="nav-links" href="#aobut-me">about me</a></li>
+                    <li data-text="service"><a class="nav-links" href="#projects">projects</a></li>
+                    <li data-text="contact-me"><a class="nav-links" href="#contact-me">contact-me</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    <div class="footer">
+        <div class="icons">
+            <a href="http://www.facebook.com/amitsingh.rawat.777" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="http://www.instagram.com/amitrawat0208" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="http://www.twitter.com/AmitRawt1" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.linkedin.com/in/amit-rawat-47713020" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="http://www.github.com/Rookie0208" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="line"></div>
+        <div class="line2"></div>
+    </div>
+    <section class="section1 " id="home">
+        <a href="index.html" class="logo"><span><span class="clr">@</span>mit rawat</span></a>
+        <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
+        <nav class="developer">
+            <div class="nav-Links" id="navLinks">
+                <div class="icons">
+                    <a href="#home" target=""><i class="fa fa-home"></i></a>
+                    <a href="#about_me" target=""><i class="fa fa-user-o"></i></a>
+                    <a href="#projects" target=""><i class="fa fa-question-circle-o"></i></a>
+                    <a href="#contact_me" target=""><i class="fa fa-phone"></i></a>
+                </div>
+                <div class="line"></div>
+                <div class="line2"></div>
+            </div>
+        </nav>
+        <!-- <i class="fa fa-times" id="pop" onclick="hideMenu()"></i> -->
+
+        <div class="text-box slideanim">
+            <div class="container ">
+                <h1 class="back">HELLO</h1>
+                <div class="text">
+                    <h3><span class="me">I </span>am</h3>
+                    <div class="backline"></div>
+                    <h1>Amit <span class="pop">Rawat</span></h1>
+                    <!-- <img src="./snapcode.svg" alt="snapcode" height="250px"> -->
+                    <h2>a designer,<br>a developer</h2>
+                    <h2>and a programmer</h2>
+                </div>
+                <img src="../snapcode.png" alt="my_pic" height="300px">
+                <!-- <a href="#" class="hero-button">Download CV</a> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section2 " id="about_me">
+
+        <div class="text-box slideanim">
+            <div class="container ">
+                <h1 class="back">ABOUT ME</h1>
+                <div class="text2 ">
+                    <h3>i am an emerging</h3>
+                    <h2>PROGRAMER</h2>
+                    <h3>and a junior software</h3>
+                    <h2>DEVELOPER.</h2>
+                    <h3>my hands have good <br>
+                        catch in</h3>
+                    <h2>WEB DEVELOPMENT</h2>
+                    <h3>except programing i love to do </h3>
+                    <h2>RAPPING.</h2>
+                    <p></p>
+                </div>
+                <img src="../snapcodeBitmoji.svg" alt="snapcodeBitmoji" height="300px">
+            </div>
+            <!-- <a href="#" class="hero-button">Download CV</a> -->
+        </div>
+    </section>
+
+
+    <section class="section3" id="projects">
+        <div class="text-box2 slideanim">
+            <div class="container">
+                <h1 class="back">WORK</h1>
+                <div class="text2">
+                    <h3>through the time i've worked on various projects which help me to continuously enhance
+                        my
+                        skill
+                        level.
+                        some of the projects which i've worked on recently are below..
+                        <br>have fun....
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section4" id="contact_me">
+        <div class="text-box2 slideanim">
+            <div class="container">
+                <h1 class="back">CONTACT</h1>
+                <div class="text3">
+                    <div class="cta">
+                        <h1>Impressed by work !! <br class="typing">Let's work together.</h1>
+                        <!-- <h2><a href="index.html">hii@amitsr.com</a></h2> -->
+
+                        <div class="touch">
+                            <a href="mailto:amitsr0208@gmail.com" class="link">hii@amitsr.co</a>
+                            <a href="tel:9643362998" class="link2">+919643362998</a>
+                        </div>
+
+                    </div>
+                    <div class="icons">
+                        <a href="http://www.facebook.com/amitsingh.rawat.777" target="_blank"><i
+                                class="fa fa-facebook"></i></a>
+                        <a href="http://www.instagram.com/amitrawat0208" target="_blank"><i
+                                class="fa fa-instagram"></i></a>
+                        <a href="http://www.twitter.com/AmitRawt1" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="http://www.linkedin.com/in/amit-rawat-47713020" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a href="http://www.linkedin.com/in/amit-rawat-47713020" target="_blank"><i
+                                class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- </div> -->
+</body>
+
+<!-- JavaScript for Toggle Menu -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- <script src="./preloaderJs.js"></script> -->
+<script src="./mobileNav.js"></script>
+<script>
+
+// $(document).ready(function(){
+//       // Add smooth scrolling to all links in navbar + footer link
+//       $(".navbar a, footer a[href='#home']").on('click', function(event) {
+//         // Make sure this.hash has a value before overriding default behavior
+//         if (this.hash !== "") {
+//           // Prevent default anchor click behavior
+//           event.preventDefault();
+    
+//           // Store hash
+//           var hash = this.hash;
+    
+//           // Using jQuery's animate() method to add smooth page scroll
+//           // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+//           $('html, body').animate({
+//             scrollTop: $(hash).offset().top
+//           }, 900, function(){
+       
+//             // Add hash (#) to URL when done scrolling (default click behavior)
+//             window.location.hash = hash;
+//           });
+//         } // End if
+//       });
+      
+//       $(window).scroll(function() {
+//         $(".slideanim").each(function(){
+//           var pos = $(this).offset().top;
+    
+//           var winTop = $(window).scrollTop();
+//             if (pos < winTop + 400) {
+//               $(this).addClass("slide");
+//             }
+//         });
+//       });
+//     })
+
+    // FOR EVERY LOAD OF THE DOM, RENDER THE RANDOM ARRAY
+    document.addEventListener("DOMContentLoaded", function () {
+        generateColor();
+    })
+    let clr = document.querySelector(".clr");
+    // generating random color
+    function generateColor() {
+        var randomColor = (Math.floor(Math.random() * 16777216)).toString(16);
+        clr.style.color = "#" + randomColor;
+        console.log(randomColor);
+    }
+
+</script>
+
+</html>
