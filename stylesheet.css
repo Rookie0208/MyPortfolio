@@ -116,7 +116,7 @@ nav {
     }
 }
 
-@media(max-with: 300px) {
+@media(max-with: 400px) {
     /* .nav-Links {
 
     } */
@@ -190,7 +190,7 @@ nav {
     }
 }
 
-@media(max-width: 300px) {
+@media(max-width: 400px) {
     .back {
     font-size: 40px;
     margin-left: 50px;
@@ -276,7 +276,7 @@ nav {
     }
 }
 
-@media(max-width: 300px) {
+@media(max-width: 400px) {
     .text-box {
         display: flex;
         /* justify-content: center; */
@@ -351,12 +351,11 @@ nav {
     }
 
     .container img {
-       /* height: 160px; */
-display: none;
+        height: 160px;
     }
 }
 
-@media(max-width: 300px) {
+@media(max-width: 400px) {
 
     .footer {
         font-size: 15px;
@@ -375,7 +374,7 @@ display: none;
     }
 
     .container img {
-        /* height: 80px; */
+        height: 80px;
         display: none;
     }
 }
@@ -400,7 +399,7 @@ display: none;
     }
 }
 
-@media(max-width: 300px) {
+@media(max-width: 400px) {
     .cta {
         line-height: 30px;
     }
@@ -486,7 +485,7 @@ display: none;
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 400px) {
     .touch .link {
         font-size: 33px;
     }
